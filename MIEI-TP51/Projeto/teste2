@@ -1,0 +1,11 @@
+node 1 /usr/bin/tee log2.txt 
+node 2 /usr/bin/tee log2.txt 
+node 3 const 30
+node 4 const 40
+node 5 const 50
+connect 3 5
+connect 4 5
+connect 5 1
+connect 5 2
+inject 3 cat 1
+inject 4 cat 2

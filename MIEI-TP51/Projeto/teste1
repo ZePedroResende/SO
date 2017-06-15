@@ -1,0 +1,4 @@
+node 1 /usr/bin/tee log1.txt 
+node 2 const 20
+connect 2 1
+inject 2 cat 1
